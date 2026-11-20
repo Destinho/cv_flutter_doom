@@ -4,7 +4,7 @@ const String kIdentifiant = 'Doom@gmail.com';
 const String kMotDePasse = 'Destinho12';
 
 class Profil {
-  static const nom = 'NSHOKANO LUSHEKE DOOM';
+  static const nom = 'IMANI KAFULI Alain';
   static const titre =
       'Étudiant en informatique appliqué à la gestion des entreprises '
       '– Développeur mobile Flutter'
