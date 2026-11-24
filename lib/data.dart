@@ -1,17 +1,12 @@
 // Données FICTIVES utilisées par l'application.
 
-const String kIdentifiant = 'Doom@gmail.com';
-const String kMotDePasse = 'Destinho12';
-
 class Profil {
-  static const nom = 'IMANI KAFULI Alain';
-  static const titre =
-      'Étudiant en informatique appliqué à la gestion des entreprises '
-      '– Développeur mobile Flutter'
-      '- Developpeur desk top et web full stuck';
+  static const nom = 'NSHOKANO LUSHEKE DOOM';
+  static const titre = 'Étudiant en informatique appliqué à la gestion des entreprises'
+      ' – Développeur mobile Flutter et web avec PHP/Laravel';
   static const photo = 'assets/images/doom.png';
   static const resume =
-      'Étudiant passionné par le développement desktop mobile et web, motivé, '
+      'Étudiant passionné par le développement mobile et web, motivé, '
       'curieux et rigoureux. À la recherche d\'un stage pour mettre en '
       'pratique mes compétences et continuer à apprendre.';
 }
@@ -22,16 +17,12 @@ class Formation {
 }
 
 const formations = [
-  Formation(
-      'Licence 3 en Informatique Appliqué à la gestion',
-      'Institut superieur d\'Informatique et de gestion de Goma',
-      '2024 – 2026'),
-  Formation(
-      'Certificat Développement mobile Flutter',
-      'Centre de formation professionnel de l\'Institut superieur d\'Informatique et de gestion de Goma',
-      '2025'),
-  Formation('Diplôme d\'État – Option Informatique',
-      'Institut technique Magengo de Goma', '2018 – 2024'),
+  Formation('Licence 3 en Informatique de gestion',
+      'Institut superieur d informatique et de gestion/ISIG GOMA', '2024 – 2026'),
+  Formation('Certificat Développement mobile Flutter',
+      'Centre de formation prossessionnel de l ISIG/ CFPI', '2025'),
+  Formation('Diplôme d\'État – Option Pedagogie',
+      'Institut magengo/Goma', '2018 – 2024'),
 ];
 
 class Experience {
@@ -42,7 +33,7 @@ class Experience {
 const experiences = [
   Experience(
       'Stagiaire développeur mobile',
-      'TechKin SARL, Goma',
+      'TechKin SARL, Kinshasa',
       'Juillet – Août 2025',
       'Développement de fonctionnalités d\'une application Flutter de suivi de livraisons.'),
   Experience(
@@ -52,7 +43,7 @@ const experiences = [
       'Application web de gestion de stock avec ventes, factures et export PDF/Excel.'),
   Experience(
       'Assistant informatique (job étudiant)',
-      'Cybercafé Le Savoir, Goma',
+      'Cybercafé Le Savoir, Kinshasa',
       '2023 – 2024',
       'Maintenance des postes, assistance aux clients et saisie de documents.'),
 ];
@@ -67,9 +58,9 @@ const competencesTechniques = {
 
 const langues = {
   'Français': 'Langue maternelle',
-  'Lingala': 'Langue maternelle',
-  'Anglais': 'Niveau intermédiaire (B1)',
-  'Swahili': 'Notions',
+  'Lingala': 'Langue nationnale',
+  'Anglais': 'Niveau avancé',
+  'Swahili': 'Niveau très avancé',
 };
 
 const centresInteret = [
@@ -77,32 +68,16 @@ const centresInteret = [
   'Football',
   'Musique',
   'Lecture',
-  'Jeux d\'échecs',
+  'Jeux d\'échecs et sciences fiction',
   'Bénévolat',
-];
-
-class Membre {
-  final String nom, lien, profession, photo;
-  const Membre(this.nom, this.lien, this.profession, this.photo);
-}
-
-const famille = [
-  Membre('Papa Lusheke', 'Père', 'Ingénieur civil', 'assets/images/papa.png'),
-  Membre('Marceline Lusheke', 'Mère', 'Infirmière', 'assets/images/maman.png'),
-  Membre(
-      'Grâce Lusheke', 'Grande sœur', 'Comptable', 'assets/images/grace.png'),
-  Membre('Patrick Lusheke', 'Frère', 'Étudiant en médecine',
-      'assets/images/patrick.png'),
-  Membre('Esther Lusheke', 'Petite sœur', 'Élève', 'assets/images/esther.png'),
-  Membre('Tonton Joseph Lusheke', 'Oncle', 'Commerçant',
-      'assets/images/joseph.png'),
+  'Education',
 ];
 
 class Contacts {
   static const telephone = '+243 978107661';
-  static const email = 'Destinholusheke@gmail.com';
-  static const adresse = 'Avenue Mutongo, Commune de karisimbi, Goma, RDC';
-  static const linkedin = 'https://www.linkedin.com/in/Destinholusheke';
-  static const github = 'https://github.com/destinho';
-  static const facebook = 'https://www.facebook.com/Destinholusheke';
+  static const email = 'destinholusheke@gmail.com';
+  static const adresse = 'Avenue Ngungu, Commune de Karisimbi, Goma, RDC';
+  static const linkedin = 'https://www.linkedin.com/in/doom-lusheke';
+  static const github = 'https://github.com/doom-lusheke';
+  static const facebook = 'https://www.facebook.com/doom.lusheke';
 }

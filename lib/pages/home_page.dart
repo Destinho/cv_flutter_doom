@@ -52,7 +52,7 @@ class HomePage extends StatelessWidget {
             const SizedBox(height: 16),
           ],
         ),
-        _section(context, 'Formation', Icons.school, [
+        _section(context, 'Formation faites', Icons.school, [
           for (final f in formations)
             ListTile(
               contentPadding: EdgeInsets.zero,
@@ -62,7 +62,7 @@ class HomePage extends StatelessWidget {
               isThreeLine: true,
             ),
         ]),
-        _section(context, 'Expériences', Icons.work, [
+        _section(context, 'Expériences professionnelles', Icons.work, [
           for (final e in experiences)
             ListTile(
               contentPadding: EdgeInsets.zero,
@@ -72,7 +72,7 @@ class HomePage extends StatelessWidget {
               isThreeLine: true,
             ),
         ]),
-        _section(context, 'Compétences techniques', Icons.code, [
+        _section(context, 'Compétences techniques maitrisées', Icons.code, [
           for (final c in competencesTechniques.entries)
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 6),
@@ -89,7 +89,7 @@ class HomePage extends StatelessWidget {
               ),
             ),
         ]),
-        _section(context, 'Langues', Icons.language, [
+        _section(context, 'Langues parlées ', Icons.language, [
           for (final l in langues.entries)
             ListTile(
               contentPadding: EdgeInsets.zero,

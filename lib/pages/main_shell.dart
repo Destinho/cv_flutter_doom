@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'home_page.dart';
-import 'family_page.dart';
+import '../services/session.dart';
 import 'contact_page.dart';
+import 'family_page.dart';
+import 'home_page.dart';
 import 'login_page.dart';
 
-/// Coque de navigation : barre de navigation du bas + déconnexion.
+/// Navigation par barre du bas + déconnexion (efface la session).
 class MainShell extends StatefulWidget {
   const MainShell({super.key});
 
@@ -18,11 +19,11 @@ class _MainShellState extends State<MainShell> {
   static const _titres = ['Mon CV', 'Ma famille', 'Contact'];
   final _pages = const [HomePage(), FamilyPage(), ContactPage()];
 
-  void _deconnexion() {
+  Future<void> _deconnexion() async {
+    await Session.effacer();
+    if (!mounted) return;
     Navigator.pushReplacement(
-      context,
-      MaterialPageRoute(builder: (_) => const LoginPage()),
-    );
+        context, MaterialPageRoute(builder: (_) => const LoginPage()));
   }
 
   @override
@@ -44,8 +45,10 @@ class _MainShellState extends State<MainShell> {
         onDestinationSelected: (i) => setState(() => _index = i),
         destinations: const [
           NavigationDestination(icon: Icon(Icons.home), label: 'Accueil'),
-          NavigationDestination(icon: Icon(Icons.family_restroom), label: 'Famille'),
-          NavigationDestination(icon: Icon(Icons.contact_mail), label: 'Contact'),
+          NavigationDestination(
+              icon: Icon(Icons.family_restroom), label: 'Famille'),
+          NavigationDestination(
+              icon: Icon(Icons.contact_mail), label: 'Contact'),
         ],
       ),
     );

@@ -1,7 +1,7 @@
-name: cv_flutter_Alain_kafuli
-description: Application Flutter présentant le CV, la famille et les contacts de Doom Nshokano Lusheke.
+name: cv_flutter_doom
+description: Application Flutter présentant le CV, la famille (via API REST) et les contacts de Doom Nshokano Lusheke.
 publish_to: 'none'
-version: 1.0.0+1
+version: 2.0.0+2
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
@@ -11,6 +11,9 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.6
   url_launcher: ^6.3.0
+  http: ^1.2.0
+  image_picker: ^1.1.2
+  shared_preferences: ^2.3.0
 
 dev_dependencies:
   flutter_test:
